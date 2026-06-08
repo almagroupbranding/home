@@ -1,12 +1,46 @@
-<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="630" fill="#F7F0E4"/>
-  <circle cx="1040" cy="90" r="260" fill="#EADCC8"/>
-  <rect x="76" y="72" width="1048" height="486" rx="38" fill="#FFFAF1" stroke="#6F1D2D" stroke-opacity="0.22" stroke-width="3"/>
-  <rect x="118" y="113" width="86" height="86" rx="25" fill="#6F1D2D"/>
-  <path d="M139 170L157 128H166L184 170H174L170.6 161H152.3L148.9 170H139ZM155 153.5H168L161.5 136.8L155 153.5Z" fill="#F7F0E4"/>
-  <text x="230" y="151" fill="#262321" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="700">The Alma Group</text>
-  <text x="230" y="190" fill="#6A5F58" font-family="Georgia, 'Times New Roman', serif" font-size="26">Hospitality brand transformation</text>
-  <text x="118" y="326" fill="#262321" font-family="Georgia, 'Times New Roman', serif" font-size="74" font-weight="700">Make every touchpoint</text>
-  <text x="118" y="410" fill="#262321" font-family="Georgia, 'Times New Roman', serif" font-size="74" font-weight="700">feel like one venue.</text>
-  <text x="120" y="485" fill="#6F1D2D" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="700">Signage • Websites • Menus • Marketing • Guest Experience</text>
-</svg>
+# The Alma Group Website — V3 Home Pack
+
+This pack is designed for your existing GitHub repository:
+
+`github.com/almagroupbranding/home`
+
+Your live website URL will be:
+
+`https://almagroupbranding.github.io/home/`
+
+## Upload instructions
+
+1. Download and unzip this pack.
+2. Open your GitHub repository: `almagroupbranding/home`.
+3. Delete the old duplicate files if needed, especially `index (1).html`.
+4. Upload the files from this pack directly into the root of the repo.
+5. Do not upload the folder itself. Upload the contents.
+6. Commit the changes.
+7. Wait 1–3 minutes, then refresh: `https://almagroupbranding.github.io/home/`
+
+## Correct file structure
+
+Your repository should look like this:
+
+```text
+home/
+├── index.html
+├── style.css
+├── script.js
+├── 404.html
+├── robots.txt
+├── sitemap.xml
+├── .nojekyll
+├── README.md
+└── assets/
+    ├── favicon.svg
+    ├── logo-mark.svg
+    └── og-card.svg
+```
+
+## Notes
+
+- This version is responsive and should not overflow off the right side of the screen.
+- The contact form opens an email to `almagroupbranding@gmail.com`.
+- If you want a different email, edit it in `index.html` and `script.js`.
+- GitHub Pages must be enabled under Settings > Pages > Deploy from a branch > main > root.
