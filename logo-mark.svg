@@ -1,0 +1,82 @@
+const header = document.querySelector("[data-header]");
+const navToggle = document.querySelector(".nav-toggle");
+const primaryNav = document.querySelector(".primary-nav");
+const year = document.querySelector("#year");
+const diagnosticForm = document.querySelector("#diagnostic-form");
+const diagnosticResult = document.querySelector("#diagnostic-result");
+const contactForm = document.querySelector("#contact-form");
+
+if (year) {
+  year.textContent = new Date().getFullYear();
+}
+
+window.addEventListener("scroll", () => {
+  header?.classList.toggle("is-scrolled", window.scrollY > 12);
+});
+
+navToggle?.addEventListener("click", () => {
+  const isOpen = primaryNav.classList.toggle("is-open");
+  navToggle.setAttribute("aria-expanded", String(isOpen));
+});
+
+primaryNav?.addEventListener("click", (event) => {
+  if (event.target.tagName === "A") {
+    primaryNav.classList.remove("is-open");
+    navToggle?.setAttribute("aria-expanded", "false");
+  }
+});
+
+diagnosticForm?.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const checked = [...diagnosticForm.querySelectorAll("input[name='issue']:checked")].map((input) => input.value);
+
+  if (checked.length === 0) {
+    diagnosticResult.textContent = "Start with a Brand Snapshot so the real commercial issue is identified before spending money.";
+    return;
+  }
+
+  const priorityMap = {
+    website: "Website and booking journey first. If guests cannot understand or book within seconds, marketing spend is being wasted.",
+    signage: "Sign Refresh first. Mismatched signs make the venue feel less managed before guests even order.",
+    menus: "Menu review first. Clearer hierarchy and better prompts can improve ease of choice and spend per head.",
+    photos: "Google and photography first. Poor photos reduce confidence before people decide whether to visit.",
+    staff: "Staff presentation first. A simple standard makes service feel more organised and professional.",
+    events: "Events and local marketing first. You may have revenue opportunities that customers simply are not seeing."
+  };
+
+  const priorityOrder = ["website", "signage", "menus", "photos", "events", "staff"];
+  const firstMatch = priorityOrder.find((issue) => checked.includes(issue));
+
+  if (checked.length >= 4) {
+    diagnosticResult.textContent = "You likely need a Brand Snapshot PDF first, then a staged fix. Too many disconnected issues can waste money if handled separately.";
+  } else {
+    diagnosticResult.textContent = priorityMap[firstMatch];
+  }
+});
+
+contactForm?.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const data = new FormData(contactForm);
+  const name = data.get("name");
+  const venue = data.get("venue");
+  const email = data.get("email");
+  const need = data.get("need");
+  const message = data.get("message");
+
+  const subject = encodeURIComponent(`Venue enquiry: ${venue}`);
+  const body = encodeURIComponent(
+`Name: ${name}
+Venue: ${venue}
+Email: ${email}
+Need: ${need}
+
+Message:
+${message}
+
+Please reply with the best first step for this venue.`
+  );
+
+  window.location.href = `mailto:hello@thealmagroup.co.uk?subject=${subject}&body=${body}`;
+});
