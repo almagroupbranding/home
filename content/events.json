@@ -1,0 +1,46 @@
+{
+  "events": [
+    {
+      "date": "2026-06-12",
+      "title": "Comedy Night",
+      "type": "Entertainment",
+      "summary": "A night of proper laughs at The Alma. Arrive early for the best seats.",
+      "cta": "Ask about a table"
+    },
+    {
+      "date": "2026-06-15",
+      "title": "Mat & JP’s Fun Pub Quiz",
+      "type": "Quiz",
+      "summary": "Fortnightly Monday quiz night with a lively local crowd.",
+      "cta": "Join the quiz"
+    },
+    {
+      "date": "2026-06-18",
+      "title": "Karaoke Night",
+      "type": "Karaoke",
+      "summary": "Fortnightly Thursday karaoke from 8pm.",
+      "cta": "See details"
+    },
+    {
+      "date": "2026-06-19",
+      "title": "Friday Night DJ",
+      "type": "Music",
+      "summary": "Friday night music from 7:30pm.",
+      "cta": "Plan your night"
+    },
+    {
+      "date": "2026-06-21",
+      "title": "Father’s Day Carvery",
+      "type": "Food",
+      "summary": "A special carvery event. Booking recommended so the kitchen can plan properly.",
+      "cta": "Enquire"
+    },
+    {
+      "date": "2026-06-29",
+      "title": "Mat & JP’s Fun Pub Quiz",
+      "type": "Quiz",
+      "summary": "A proper local quiz night in a proper local pub.",
+      "cta": "Ask about a table"
+    }
+  ]
+}

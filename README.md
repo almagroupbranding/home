@@ -1,46 +1,35 @@
-# The Alma Group Website — V3 Home Pack
+# The Alma — Complete Redesign + Pages CMS
 
-This pack is designed for your existing GitHub repository:
+This version removes the oversized banner and rebuilds the site with a calmer, cleaner, more commercial layout.
 
-`github.com/almagroupbranding/home`
+## Upload
 
-Your live website URL will be:
+Upload every file and folder to the root of the `/pub` repository.
 
-`https://almagroupbranding.github.io/home/`
+Important: make sure the hidden file `.pages.yml` is uploaded. If GitHub misses hidden files, use `PAGES-CMS-CONFIG-COPY.yml` and copy its contents into a new root file called `.pages.yml`.
 
-## Upload instructions
+## Pages CMS
 
-1. Download and unzip this pack.
-2. Open your GitHub repository: `almagroupbranding/home`.
-3. Delete the old duplicate files if needed, especially `index (1).html`.
-4. Upload the files from this pack directly into the root of the repo.
-5. Do not upload the folder itself. Upload the contents.
-6. Commit the changes.
-7. Wait 1–3 minutes, then refresh: `https://almagroupbranding.github.io/home/`
+Pages CMS will edit:
 
-## Correct file structure
+- Site Settings
+- Events
+- News Updates
+- Food & Menus
+- Gallery
 
-Your repository should look like this:
+## Commercial notes
 
-```text
-home/
-├── index.html
-├── style.css
-├── script.js
-├── 404.html
-├── robots.txt
-├── sitemap.xml
-├── .nojekyll
-├── README.md
-└── assets/
-    ├── favicon.svg
-    ├── logo-mark.svg
-    └── og-card.svg
-```
+The design is intentionally less fussy:
+- smaller header
+- no giant banner image
+- clear first impression
+- clear quick links
+- clear event cards
+- clear venue hire path
+- content managed through JSON files
 
-## Notes
 
-- This version is responsive and should not overflow off the right side of the screen.
-- The contact form opens an email to `almagroupbranding@gmail.com`.
-- If you want a different email, edit it in `index.html` and `script.js`.
-- GitHub Pages must be enabled under Settings > Pages > Deploy from a branch > main > root.
+## AI Admin Added
+
+See `AI-ADMIN-SETUP.md` for the admin AI writer, secure Worker backend, and AI function enquiry setup.
