@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://almagroupbranding.github.io/home/sitemap.xml
