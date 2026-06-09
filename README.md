@@ -1,35 +1,51 @@
-# The Alma — Complete Redesign + Pages CMS
+# The Alma Group — V4 Complete Redesign
 
-This version removes the oversized banner and rebuilds the site with a calmer, cleaner, more commercial layout.
+A complete redesigned GitHub Pages website for The Alma Group.
 
-## Upload
+Built for the repository:
 
-Upload every file and folder to the root of the `/pub` repository.
+```text
+almagroupbranding/home
+```
 
-Important: make sure the hidden file `.pages.yml` is uploaded. If GitHub misses hidden files, use `PAGES-CMS-CONFIG-COPY.yml` and copy its contents into a new root file called `.pages.yml`.
+Live URL after upload:
 
-## Pages CMS
+```text
+https://almagroupbranding.github.io/home/
+```
 
-Pages CMS will edit:
+## What is included
 
-- Site Settings
-- Events
-- News Updates
-- Food & Menus
-- Gallery
+- `index.html` — main homepage
+- `style.css` — responsive visual design
+- `script.js` — mobile navigation and reveal animations
+- `404.html` — simple fallback page
+- `.nojekyll` — prevents GitHub Pages processing issues
+- `robots.txt`
+- `sitemap.xml`
+- `assets/` — logo, favicon, social preview and visual before/after examples
 
-## Commercial notes
+## Upload instructions
 
-The design is intentionally less fussy:
-- smaller header
-- no giant banner image
-- clear first impression
-- clear quick links
-- clear event cards
-- clear venue hire path
-- content managed through JSON files
+1. Unzip this pack.
+2. Go to `github.com/almagroupbranding/home`.
+3. Delete the old files in the repo.
+4. Upload the contents of this folder directly into the repo root.
+5. Commit changes.
+6. Go to Settings → Pages.
+7. Make sure it is set to:
+   - Source: Deploy from a branch
+   - Branch: main
+   - Folder: /root
+8. Wait a few minutes and refresh:
+   `https://almagroupbranding.github.io/home/`
 
+## Contact email currently used
 
-## AI Admin Added
+The contact form uses:
 
-See `AI-ADMIN-SETUP.md` for the admin AI writer, secure Worker backend, and AI function enquiry setup.
+```text
+almagroupbranding@gmail.com
+```
+
+Change this in `index.html` if needed.

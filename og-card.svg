@@ -1,4 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="The Alma Group">
-  <rect width="128" height="128" rx="31" fill="#7a1830"/>
-  <path fill="#fffaf2" d="M72.9 24.5 108 103.5H89.2l-6.5-15.9H45.2l-6.4 15.9H20.3l35-79h17.6Zm3.7 47.7L64.1 41.7 51.5 72.2h25.1Z"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><rect x="10" y="10" width="108" height="108" rx="28" fill="#74142b"/><path d="M65 27l36 74H80l-6-14H54l-6 14H27l36-74h2zm3 45l-9-22-9 22h18z" fill="#fff7eb"/><circle cx="64" cy="17" r="7" fill="#d6b36d"/></svg>
